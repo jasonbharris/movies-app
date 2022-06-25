@@ -9,6 +9,6 @@ export class MoviesService {
   constructor(private http: HttpClient) { }
 
   getMovies() {
-    return this.http.get('https://api.themoviedb.org/3/movie/550?api_key=824864242e7386dda207ea089b0a7e76')
+    return this.http.get('https://api.themoviedb.org/3/movie/upcoming?api_key=824864242e7386dda207ea089b0a7e76')
   }
 }
