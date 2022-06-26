@@ -54,7 +54,7 @@
 
         .info {
           span {
-            &:not(:last-child) &:not(:first-child):after {
+            &:not(:last-child):after{
               content: '|';
               margin-right: 9px;
               margin-left: 9px;

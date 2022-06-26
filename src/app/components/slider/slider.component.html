@@ -1,15 +1,16 @@
+<!-- <pre>{{ items | json }}</pre> -->
 <div class='slider'>
-  <div class='slide'>
+  <div class='slide' *ngFor='let item of items'>
     <div class='slide-bg'>
       <img class='slide-bg-image' src='https://image.tmdb.org/t/p/original/cqnVuxXe6vA7wfNWubak3x36DKJ.jpg' alt='The Northman'>
     </div>
     <div class='slide-pane'>
-      <h2 class='name'>The Northman</h2>
+      <h2 class='name'>{{ item.title }}</h2>
       <div class='meta'>
         <div class='info'>
           <span class='rating'>
             <span class='app-icon'>star</span><span class='rating-value'>7.3</span><span>/10</span>
-            <span>1632 Reviews</span>
+            <span>{{item.vote_count}} Reviews</span>
             <span>2022</span>
           </span>
         </div>
